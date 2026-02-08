@@ -61,11 +61,37 @@ def add_task():
 
 ########## 3) COMPLETE TASK ##########
 
+def complete_task():
+    print('\n**COMPLETE TASK**')
+    show_tasks()
 
+    try:
+        stream = open('tasks.txt', 'r')
+        lines = stream.readlines()
+        stream.close()
+    except FileNotFoundError:
+        print('No tasks to complete!')
+        return
 
+    if len(lines) == 0:
+        print('No tasks to complete!')
+        return
 
+    id_to_delete = input('Enter ID to complete: ').strip()
 
+    stream = open('tasks.txt', 'w')
+    for line in lines:
+        parts = line.split('|') # because of spaces in the ID field
 
+        if len(parts) >= 3:
+            line_id = parts[1].strip()
+            if line_id != id_to_delete:
+                stream.write(line)
+        else:
+            stream.write(line)
+
+    stream.close()
+    print('Task completed!\n')
 
 
 ########## MAIN LOOP (menu display) ##########
