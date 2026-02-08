@@ -48,5 +48,5 @@ cd to_do_list
 ```
 3. Run the program:
 ```
-python main.py
+python3 main.py
 ```
