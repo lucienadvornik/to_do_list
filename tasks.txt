@@ -1,2 +1,5 @@
-==== TO-DO LIST ====
-ID | TASK | DEADLINE
+____________________________
+| ====== TO DO LIST ====== |
+|  ID  |  TASK   | DEADLINE|
+|   1  |Cleaning |10.2.2026|
+|   2  |Vacuming |14.2.2026|
