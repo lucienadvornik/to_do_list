@@ -35,6 +35,10 @@ In this program, the user can view saved tasks, add new ones with deadlines, and
 Python 3.x  
 
 
+## Additional info
+
+There is minor difference between assignment and solution, for the solution I've choose use counter of the tasks instead of UUID (the UUID solution is still commented in the code). And also the design of the table is slightly adjusted.
+
 
 ## How to Run Locally
 
